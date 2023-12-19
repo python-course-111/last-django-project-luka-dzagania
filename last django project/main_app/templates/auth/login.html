@@ -1,0 +1,34 @@
+{%extends "../base.html" %}
+
+{%block content%}
+
+{% load crispy_forms_tags %}
+<h1><br><br></h1>
+<div class="container">
+    <h1>Login</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ login_form|crispy }}
+        <button class="btn btn-primary" type="submit">Login</button>
+    </form>
+    <p class="text-center">If you don't have account <a href="/register.html">Create an account</a></p>
+</div>
+<br><br>
+<style>
+    body{
+        background-image: url(https://www.bhmpics.com/downloads/space-stars-4k-Wallpapers/20.space-stars-purple-sky-3n-1600x900.jpg);
+    }
+    h1{
+        color: white;
+    }
+    label{
+        color: white;
+    }
+    p{
+        color: rgb(189, 189, 189);
+    }
+    .container{
+        height: 605px;
+    }
+</style>
+{% endblock %}

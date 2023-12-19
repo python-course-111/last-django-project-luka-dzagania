@@ -1,0 +1,140 @@
+{%extends "base.html" %}
+
+{% block content %}
+    <section class="about">
+        <h1>About Us</h1>
+        <p style="font-weight: bold">A+ games is a gamers platform</p>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="https://i.pinimg.com/564x/73/21/34/7321349e5c3d2fbaafc3d239fe4b9e48.jpg">
+            </div>
+            <div>
+                <p>A+ games is a leading platform...</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+a{
+    color: black;
+    size: 20px;
+}
+.about {
+    background: rgb(224, 251, 222);
+    background-image: url(https://www.bhmpics.com/downloads/space-stars-4k-Wallpapers/20.space-stars-purple-sky-3n-1600x900.jpg);
+    padding: 135px 0 20px 0;
+    text-align: center;
+    height: 709px;
+}
+ 
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+ 
+.about p {
+    font-size: 1rem;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+.about-info {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+ 
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+ 
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+ 
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #9730ec;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+ 
+button:hover {
+    background-color: #ad0fd4;
+}
+ 
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+ 
+    .logo {
+        text-align: center;
+    }
+ 
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+ 
+    .nav-links li {
+        margin-right: 0;
+    }
+ 
+    .about h1 {
+        font-size: 2rem;
+    }
+ 
+    .about p {
+        font-size: 0.9rem;
+    }
+ 
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+ 
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+ 
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+}
+    </style>
+
+{% endblock %}
